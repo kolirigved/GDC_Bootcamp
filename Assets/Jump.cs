@@ -9,7 +9,7 @@ public class Jump : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        OnGround = true;
+        OnGround = false;
         rb = GetComponent<Rigidbody2D>();
     }
 

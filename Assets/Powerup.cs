@@ -19,6 +19,7 @@ public class Powerup : MonoBehaviour
     }
     public void ActivateShield(){
         Shield.SetActive(true);
+        poweractive=true;
     }
 
     public void DeactivateShield(){
