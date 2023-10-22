@@ -7,7 +7,7 @@ public class Death_Trap : MonoBehaviour
 {
    public Powerup powerup;
    private void OnCollisionEnter2D(Collision2D collision){
-      if(collision.gameObject.CompareTag("Player")&&powerup.poweractive==false){
+      if(collision.gameObject.CompareTag("Player")&&!powerup.isActivated()){
          Destroy(collision.gameObject);
          Restart();
       }
